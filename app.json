@@ -1,0 +1,8 @@
+{
+    "name": "essoft-microservice-gateway",
+    "buildpacks": [
+      {
+        "url": "heroku/java"
+      }
+    ]
+  }
