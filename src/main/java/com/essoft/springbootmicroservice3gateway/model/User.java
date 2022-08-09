@@ -13,7 +13,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "users")//user is a reserved word and it's usually not a good idea use reserved words for identifiers
+@Table(name = "users")
 public class User
 {
     @Id

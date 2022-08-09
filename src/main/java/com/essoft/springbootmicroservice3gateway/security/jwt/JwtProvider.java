@@ -39,13 +39,7 @@ public class JwtProvider implements IJwtProvider
     private final PrivateKey jwtPrivateKey;
     private final PublicKey jwtPublicKey;
 
-    /*
-      First, we require public and private keys for RSA encryption and decryption.
-      Hence, below is the tool to generate RSA key online.
-      It generates RSA public key as well as the private key of size 512 bit, 1024 bit, 2048 bit,
-      3072 bit and 4096 bit with Base64 encoded.
-      By default, the private key is generated in PKCS#8 format and the public key is generated in X.509 format.
-     */
+    
     public JwtProvider(@Value("${authentication.jwt.private-key}") String jwtPrivateKeyStr,
                        @Value("${authentication.jwt.public-key}") String jwtPublicKeyStr)
     {
